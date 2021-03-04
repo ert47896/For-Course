@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Assignment 2</title>
+<script type="text/javascript">
+function calculate(min, max){
+    var sum=0;
+    for(var i=min;i<=max;i++){
+        sum+=i;
+    }
+    console.log(sum);
+}
+calculate(1,3);
+calculate(4,8);
+
+function avg(data){
+    var i, sum=0, employees=data.employees, count=data.count;
+    for(i=0; i<count; i++){
+        sum+=employees[i].salary;        
+    }
+    console.log(sum/count);
+}
+avg({
+    "count":3,
+    "employees":[
+        {
+            "name":"John","salary":30000
+        },{
+            "name":"Bob","salary":60000
+        },{
+            "name":"Jenny","salary":50000
+        }
+    ]
+});
+
+function maxProduct(nums){
+    var i, pos_1=0, pos_2=0, nag_1=0, nag_2=0, pos_m, nag_m;
+    for(i in nums){
+        if(nums[i] >= 0){
+            if(nums[i] >= pos_1){
+                pos_2=pos_1;
+                pos_1=nums[i];
+            }
+            else if(nums[i] >= pos_2){
+                pos_2=nums[i];
+            }
+        }
+        else{
+            if(nums[i] <= nag_1){
+                nag_2 = nag_1;
+                nag_1 = nums[i];
+            }
+            else if(nums[i] <= nag_2){
+                nag_2=nums[i];
+            }
+        }
+    }
+    pos_m=pos_1*pos_2;
+    nag_m=nag_1*nag_2;
+    if(pos_m > nag_m){
+        console.log(pos_m);
+    }
+    else{
+        console.log(nag_m);
+    }
+}
+maxProduct([5,20,2,6]);
+maxProduct([10,-20,0,3]);
+
+function twoSum(nums, target){
+    var another, index_1=0;
+    for(index_1;index_1<nums.length;index_1++){
+        another=target-nums[index_1];
+        var index_2=index_1+1;
+        for(index_2;index_2<nums.length;index_2++){
+            if(nums[index_2] == another){
+                return([index_1, index_2]);
+            }
+        }
+    }
+}
+result=twoSum([2,11,7,15],9)
+console.log(result)
+
+function maxZeros(nums){
+    var i, max_count=0, this_round_count=0;
+    for(i in nums){
+        if(nums[i]==0){
+            this_round_count+=1;
+        }
+        else{
+            if(this_round_count>max_count){
+                max_count=this_round_count;
+                this_round_count=0;
+            }
+        }
+    }
+    if(this_round_count>max_count){
+        max_count=this_round_count;
+    }
+    console.log(max_count);
+}
+maxZeros([0,1,0,0])
+maxZeros([1,0,0,0,0,1,0,1,0,0])
+maxZeros([1,1,1,1,1])
+</script>
+</head>
+<body>
+</body>
+</html>
