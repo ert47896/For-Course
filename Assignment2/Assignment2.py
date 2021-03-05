@@ -38,14 +38,18 @@ def maxProduct(nums):
                 nag_1 = i
             elif i<= nag_2:
                 nag_2 = i
-    pos_m = pos_1*pos_2
-    nag_m = nag_1*nag_2
-    if pos_m >= nag_m:
-        print(pos_m)
+    if pos_2==0 and nag_2==0:
+        print(pos_1*nag_1)
     else:
-        print(nag_m)
+        pos_m = pos_1*pos_2
+        nag_m = nag_1*nag_2
+        if pos_m >= nag_m:
+            print(pos_m)
+        else:
+            print(nag_m)
 maxProduct([5,20,2,6])
 maxProduct([10,-20,0,3])
+#maxProduct([-2,10])
 
 def twoSum(nums, target):
     index_1=0

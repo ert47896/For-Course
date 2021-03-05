@@ -56,17 +56,23 @@ function maxProduct(nums){
             }
         }
     }
-    pos_m=pos_1*pos_2;
-    nag_m=nag_1*nag_2;
-    if(pos_m > nag_m){
-        console.log(pos_m);
+    if(pos_2==0 && nag_2==0){
+        console.log(pos_1*nag_1);
     }
     else{
-        console.log(nag_m);
-    }
+        pos_m=pos_1*pos_2;
+        nag_m=nag_1*nag_2;
+        if(pos_m > nag_m){
+            console.log(pos_m);
+        }
+        else{
+            console.log(nag_m);
+        }
+    } 
 }
 maxProduct([5,20,2,6]);
 maxProduct([10,-20,0,3]);
+//maxProduct([-2,10]);
 
 function twoSum(nums, target){
     var another, index_1=0;
