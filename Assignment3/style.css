@@ -7,14 +7,14 @@ body{
     align-items:center;
     padding:5px;
 }
-nav>.top_title{
+nav>.topTitle{
     font-weight:bold;
     flex:auto;
 }
 nav>label{
     display:none;
 }
-nav>.top_bar{
+nav>.topBar{
     list-style:none;
     display:flex;
     flex:none;width:220px;
@@ -22,11 +22,11 @@ nav>.top_bar{
 nav>ul>li{
     flex:auto;
 }
-.sub_title{
+.subTitle{
     height:300px;font-size:40px;line-height:300px;text-align:center;
     background-color:#00ffff;
 }
-.photos_container{
+.photosContainer{
     margin:20px; /*main跟body間隔10px*/
     margin-left:auto;margin-right:auto; /*main物件在畫面水平置中*/
     display:flex;
@@ -35,7 +35,7 @@ nav>ul>li{
 }
 main>.container{
     flex:none;
-    width:270px;
+    width:280px;
     margin:10px;
     display:flex;
     flex-direction:column;
@@ -48,7 +48,7 @@ main>div>img{
     object-position:center;
     display:block; /*消除img跟div間空白*/
 }
-main>div>div{
+main>div>.context{
     padding:5px;
     flex:auto;min-height:40px;background-color:#00ffff;
     font-size:20px;line-height:1.5; /*行距基準看font-size,20x1.5=30px*/
@@ -57,8 +57,13 @@ main>div>div{
     justify-content:center;
     align-items:center;
 }
+.button{
+    font-size:16px;width:120px;padding:10px;border:1px solid #888888;
+    background-color:#eeeeee;margin:auto;display:block;
+    margin-bottom:25px;
+}
 @media (min-width:1200px){
-    .photos_container{
+    .photosContainer{
         width:1200px;
     }
 }
@@ -71,7 +76,7 @@ main>div>div{
     main>.container{
         width:90%;  /*佔整個版面的90%*/
     }
-    nav>.top_bar{
+    nav>.topBar{
         display:none;
     }
     nav label{
