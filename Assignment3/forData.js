@@ -1,11 +1,13 @@
 const photoNum=8;
 let photoCount=0;
 let data;
+let maxNum=0;
 window.onload=function(){
     let req=new XMLHttpRequest();
     req.open("get", "https://padax.github.io/taipei-day-trip-resources/taipei-attractions.json");
     req.onload=function(){
         data = JSON.parse(req.responseText).result.results;
+        maxNum = data.length;
         dealData(data);
     };
     req.send();
@@ -14,7 +16,11 @@ window.onload=function(){
 let btn=document.getElementById("btn");
 btn.addEventListener("click", function(){
     photoCount+=photoNum;
-    dealData(data);    
+    if(photoCount>=maxNum){
+        btn.textContent="地點已呈現完畢!";
+    }else{
+        dealData(data);
+    }
 });
 
 function dealData(spotsData){
