@@ -1,6 +1,6 @@
 # Assignment 5
 
-##要求三
+## 要求三
 1. SQL指令：
 ```SQL
 INSERT INTO user(name, username, password) VALUES ("Kevin", "ply", "ply");
@@ -19,7 +19,7 @@ VALUES
 ```SQL
 SELECT * FROM user;
 ```
-執行結果圖
+執行結果圖：
 ![Photo missing](photo/3-2.png)
 
 3. SQL指令：
@@ -78,7 +78,7 @@ DELETE FROM user;
 執行結果圖
 ![Photo missing](photo/3-9.png)
 
-##要求四
+## 要求四
 1. SQL指令：
 ```SQL
 SELECT name "姓名", content "留言"
