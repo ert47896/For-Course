@@ -26,7 +26,7 @@ SELECT * FROM user;
 ```SQL
 SELECT COUNT(*) AS total_amount FROM user;
 ```
-執行結果圖
+執行結果圖：
 ![Photo missing](photo/3-3.png)
 
 4. SQL指令：
@@ -34,7 +34,7 @@ SELECT COUNT(*) AS total_amount FROM user;
 SELECT * FROM user
 ORDER BY time DESC;
 ```
-執行結果圖
+執行結果圖：
 ![Photo missing](photo/3-4.png)
 
 5. SQL指令：
@@ -43,7 +43,7 @@ SELECT * FROM user
 WHERE id BETWEEN 2 AND 4
 ORDER BY time DESC;
 ```
-執行結果圖
+執行結果圖：
 ![Photo missing](photo/3-5.png)
 
 6. SQL指令：
@@ -51,7 +51,7 @@ ORDER BY time DESC;
 SELECT * FROM user
 WHERE username="ply";
 ```
-執行結果圖
+執行結果圖：
 ![Photo missing](photo/3-6.png)
 
 7. SQL指令：
@@ -59,7 +59,7 @@ WHERE username="ply";
 SELECT * FROM user
 WHERE username="ply" AND password="ply";
 ```
-執行結果圖
+執行結果圖：
 ![Photo missing](photo/3-7.png)
 
 8. SQL指令：
@@ -68,14 +68,14 @@ UPDATE user
 SET name="丁滿"
 WHERE username="ply";
 ```
-執行結果圖
+執行結果圖：
 ![Photo missing](photo/3-8.png)
 
 9. SQL指令：
 ```SQL
 DELETE FROM user;
 ```
-執行結果圖
+執行結果圖：
 ![Photo missing](photo/3-9.png)
 
 ## 要求四
@@ -96,5 +96,5 @@ FROM user u
 INNER JOIN message m
 ON u.id = m.user_id WHERE u.username="ply";
 ```
-執行結果圖
+執行結果圖：
 ![Photo missing](photo/4-2.png)
