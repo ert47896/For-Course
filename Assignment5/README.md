@@ -6,5 +6,5 @@
 INSERT INTO user(name, username, password)
 VALUE ("Kevin", "ply", "ply");
 ```
-![GITHUB]("photo/3-1.png")
+![GITHUB](photo/3-1.png)
 2. 
