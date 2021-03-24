@@ -1,7 +1,7 @@
 # Assignment 5
 
 ## 要求三
-#### 1. SQL指令：
+> #### 1. SQL指令：
 ```SQL
 INSERT INTO user(name, username, password) VALUES ("Kevin", "ply", "ply");
 INSERT INTO user(name, username, password, time)
@@ -14,6 +14,7 @@ VALUES
 ```
 #### 執行結果圖：
 ![Photo missing](photo/3-1.png)
+>
 
 #### 2. SQL指令：
 ```SQL
