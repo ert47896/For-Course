@@ -15,7 +15,8 @@ VALUES
 執行結果圖：
 ![Photo missing](photo/3-1.png)
 
-1. SQL指令：
+2. SQL指令：
+3. ddddd
 ```SQL
 SELECT * FROM user;
 ```
