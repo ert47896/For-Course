@@ -2,7 +2,7 @@
 
 ###要求三
 1. SQL指令：
-```SQL
+```sql
 INSERT INTO user(name, username, password) VALUES ("Kevin", "ply", "ply");
 INSERT INTO user(name, username, password, time)
 VALUES 
@@ -12,5 +12,5 @@ VALUES
 ("Rola", "ply", "cat", DEFAULT),
 ("David", "third_man", "diamond", "2021-03-24 00:00:00");
 ```
-![](photo/3-1.png)
+![GITHUB](photo/3-1111.png)
 2. 
