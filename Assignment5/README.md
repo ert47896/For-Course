@@ -1,8 +1,8 @@
 # Assignment 5
 
 ## 要求三
->
->>
+> 
+>> 
 1. SQL指令：
 ```SQL
 INSERT INTO user(name, username, password) VALUES ("Kevin", "ply", "ply");
@@ -16,24 +16,24 @@ VALUES
 ```
 執行結果圖：
 ![Photo missing](photo/3-1.png)
->>
->>
+>> 
+>> 
 2. SQL指令：
 ```SQL
 SELECT * FROM user;
 ```
 執行結果圖：
 ![Photo missing](photo/3-2.png)
->>
->>
+>> 
+>> 
 3. SQL指令：
 ```SQL
 SELECT COUNT(*) AS total_amount FROM user;
 ```
 執行結果圖：
 ![Photo missing](photo/3-3.png)
->>
-
+>> 
+> 
 4. SQL指令：
 ```SQL
 SELECT * FROM user
