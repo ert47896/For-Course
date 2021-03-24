@@ -16,7 +16,7 @@ VALUES
 ![Photo missing](photo/3-1.png)
 
 1. SQL指令：
-3. ddddd
+1. ddddd
 ```SQL
 SELECT * FROM user;
 ```
