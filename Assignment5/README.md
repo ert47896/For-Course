@@ -41,8 +41,8 @@ ORDER BY time DESC;
 #### 5. SQL指令：
 ```SQL
 SELECT * FROM user
-WHERE id BETWEEN 2 AND 4
-ORDER BY time DESC;
+ORDER BY time DESC
+LIMIT 1, 3;
 ```
 #### 執行結果圖：
 ![Photo missing](photo/3-5.png)
