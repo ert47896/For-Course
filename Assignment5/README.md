@@ -4,6 +4,13 @@
 1. SQL指令：
 ```SQL
 INSERT INTO user(name, username, password) VALUES ("Kevin", "ply", "ply");
+INSERT INTO user(name, username, password, time)
+VALUES 
+("John", "first_man", "article", DEFAULT),
+("Kenny", "ply", "book", "2021-03-23 00:00:00"),
+("Annie", "first_lady", "ply", "2021-03-23 23:59:59"),
+("Rola", "ply", "cat", DEFAULT),
+("David", "third_man", "diamond", "2021-03-24 00:00:00");
 ```
-![GITHUB](photo/3-1.png)
+![](photo/3-1.png)
 2. 
