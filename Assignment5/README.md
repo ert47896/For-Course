@@ -45,7 +45,7 @@ ORDER BY time DESC
 LIMIT 1, 3;
 ```
 #### 執行結果圖：
-![Photo missing](photo/3-00.png)
+![Photo missing](photo/3-5.png)
 
 #### 6. SQL指令：
 ```SQL
