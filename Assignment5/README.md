@@ -13,7 +13,7 @@ VALUES
 ("David", "third_man", "diamond", "2021-03-24 00:00:00");
 ```
 #### 執行結果圖：
-![Photo missing](photo/3-1.png)
+![](photo/3-1.png)
 
 
 #### 2. SQL指令：
@@ -21,14 +21,14 @@ VALUES
 SELECT * FROM user;
 ```
 #### 執行結果圖：
-![Photo missing](photo/3-2.png)
+![](photo/3-2.png)
 
 #### 3. SQL指令：
 ```SQL
 SELECT COUNT(*) AS total_amount FROM user;
 ```
 #### 執行結果圖：
-![Photo missing](photo/3-3.png)
+![](photo/3-3.png)
 
 #### 4. SQL指令：
 ```SQL
@@ -36,7 +36,7 @@ SELECT * FROM user
 ORDER BY time DESC;
 ```
 #### 執行結果圖：
-![Photo missing](photo/3-4.png)
+![](photo/3-4.png)
 
 #### 5. SQL指令：
 ```SQL
@@ -45,7 +45,7 @@ ORDER BY time DESC
 LIMIT 1, 3;
 ```
 #### 執行結果圖：
-![Photo missing](photo/3-5.png)
+![](photo/3-5.png)
 
 #### 6. SQL指令：
 ```SQL
@@ -53,7 +53,7 @@ SELECT * FROM user
 WHERE username="ply";
 ```
 #### 執行結果圖：
-![Photo missing](photo/3-6.png)
+![](photo/3-6.png)
 
 #### 7. SQL指令：
 ```SQL
@@ -61,7 +61,7 @@ SELECT * FROM user
 WHERE username="ply" AND password="ply";
 ```
 #### 執行結果圖：
-![Photo missing](photo/3-7.png)
+![](photo/3-7.png)
 
 #### 8. SQL指令：
 ```SQL
@@ -70,14 +70,14 @@ SET name="丁滿"
 WHERE username="ply";
 ```
 #### 執行結果圖：
-![Photo missing](photo/3-8.png)
+![](photo/3-8.png)
 
 #### 9. SQL指令：
 ```SQL
 DELETE FROM user;
 ```
 #### 執行結果圖：
-![Photo missing](photo/3-9.png)
+![](photo/3-9.png)
 
 ## 要求四
 #### 1. SQL指令：
@@ -88,7 +88,7 @@ INNER JOIN message t2
 ON t1.id = t2.user_id;
 ```
 #### 執行結果圖：
-![Photo missing](photo/4-1.png)
+![](photo/4-1.png)
 
 #### 2. SQL指令：
 ```SQL
@@ -98,4 +98,4 @@ INNER JOIN message m
 ON u.id = m.user_id WHERE u.username="ply";
 ```
 #### 執行結果圖：
-![Photo missing](photo/4-2.png)
+![](photo/4-2.png)
